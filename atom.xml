@@ -5,7 +5,7 @@
   <subtitle><![CDATA[J955技术博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.j955.net//"/>
-  <updated>2015-07-28T08:11:11.000Z</updated>
+  <updated>2015-07-28T08:28:37.000Z</updated>
   <id>http://blog.j955.net//</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.j955.net/2015/07/27/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8D%83%E4%B8%87%E4%B8%8D%E8%A6%81%E9%87%8D%E5%86%99%E4%BB%A3%E7%A0%81%EF%BC%9F/"/>
     <id>http://blog.j955.net/2015/07/27/为什么千万不要重写代码？/</id>
     <published>2015-07-27T15:07:23.000Z</published>
-    <updated>2015-07-28T08:11:11.000Z</updated>
+    <updated>2015-07-28T08:28:37.000Z</updated>
     <content type="html"><![CDATA[<p>转载自: <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzQ3ODAwMQ==&amp;mid=212512928&amp;idx=1&amp;sn=545f5845333983f1542c8bb1cd044244#rd" target="_blank" rel="external">地址</a><br>微信看到的一篇文章,比较认同</p>
 <blockquote>
 <p>程序员都有一颗工程师的心，所以当他们到一片新的场地想做的第一件事就是，将旧的一切推倒重来。是的，他们决不会满足于简单的增量劳动。</p>
@@ -70,11 +70,9 @@
     <![CDATA[<p>转载自: <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzQ3ODAwMQ==&amp;mid=212512928&amp;idx=1&amp;sn=545f5845333983f1542c8bb1cd044244#rd" ta]]>
     </summary>
     
-      <category term="编程心得" scheme="http://blog.j955.net/tags/%E7%BC%96%E7%A8%8B%E5%BF%83%E5%BE%97/"/>
+      <category term="思路想法" scheme="http://blog.j955.net/tags/%E6%80%9D%E8%B7%AF%E6%83%B3%E6%B3%95/"/>
     
-      <category term="转载" scheme="http://blog.j955.net/categories/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="编程心得" scheme="http://blog.j955.net/categories/%E8%BD%AC%E8%BD%BD/%E7%BC%96%E7%A8%8B%E5%BF%83%E5%BE%97/"/>
+      <category term="思路想法" scheme="http://blog.j955.net/categories/%E6%80%9D%E8%B7%AF%E6%83%B3%E6%B3%95/"/>
     
   </entry>
   
