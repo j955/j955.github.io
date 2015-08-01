@@ -5,7 +5,7 @@
   <subtitle><![CDATA[J955技术博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.j955.net//"/>
-  <updated>2015-07-28T08:28:37.000Z</updated>
+  <updated>2015-08-01T03:46:06.000Z</updated>
   <id>http://blog.j955.net//</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[使用Alcatraz强化xcode]]></title>
+    <link href="http://blog.j955.net/2015/08/01/%E4%BD%BF%E7%94%A8Alcatraz%E5%BC%BA%E5%8C%96xcode/"/>
+    <id>http://blog.j955.net/2015/08/01/使用Alcatraz强化xcode/</id>
+    <published>2015-08-01T03:37:36.000Z</published>
+    <updated>2015-08-01T03:46:06.000Z</updated>
+    <content type="html"><![CDATA[<p>Alcatraz的介绍跟安装使用我就不详细说了, 具体说明请看这里 ( <a href="http://blog.devtang.com/blog/2014/03/05/use-alcatraz-to-manage-xcode-plugins/" target="_blank" rel="external">使用Alcatraz来管理Xcode插件</a> )<br>但在这里推荐几款我的常用插件</p>
+<ol>
+<li>FuzzyAutocomplete<br> 众所周知ios开发需要用到很多方法单init的方法就有好几个,但有时难免无法全部方法名都记得,xcode开发软件有个不爽就是方法提示必须按顺序正确打出.<br> FuzzyAutocomplete 就帮组我们免除这个烦恼</li>
+<li>VVDocumenter<br> 猫神的作品品质保证 ^_^ , 三个///就可以进行注释添加 </li>
+<li>XAlign<br> 代码格式化自动整理,也是我以前开发必备的功能.现在居然要安装插件</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Alcatraz的介绍跟安装使用我就不详细说了, 具体说明请看这里 ( <a href="http://blog.devtang.com/blog/2014/03/05/use-alcatraz-to-manage-xcode-plugins/" target="_blan]]>
+    </summary>
+    
+      <category term="Alcatraz" scheme="http://blog.j955.net/tags/Alcatraz/"/>
+    
+      <category term="swift" scheme="http://blog.j955.net/tags/swift/"/>
+    
+      <category term="swift" scheme="http://blog.j955.net/categories/swift/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[为什么千万不要重写代码？]]></title>
