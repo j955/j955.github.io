@@ -5,7 +5,7 @@
   <subtitle><![CDATA[J955技术博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.j955.net//"/>
-  <updated>2015-08-01T03:46:06.000Z</updated>
+  <updated>2015-08-04T07:32:57.000Z</updated>
   <id>http://blog.j955.net//</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[测试warkdown]]></title>
+    <link href="http://blog.j955.net/2015/08/04/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E8%BA%AB%E4%BB%BD%E8%AF%81/"/>
+    <id>http://blog.j955.net/2015/08/04/中国大陆身份证/</id>
+    <published>2015-08-04T07:30:38.000Z</published>
+    <updated>2015-08-04T07:32:57.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Identity_Card（中国大陆）公民身份证类">Identity Card（中国大陆）公民身份证类</h2><h3 id="安装说明">安装说明</h3><p>在 <code>composer</code> 中添加依赖：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"require": &#123;</span><br><span class="line">	"douyasi/identity-card": "dev-master"</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p>然后在命令行窗体里执行 <code>composer update</code> 命令。</p>
+<h3 id="使用说明">使用说明</h3><p>创建ID类的实例，然后调用其对应方法。</p>
+<p><code>Laravel 5</code> 测试路由示例：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Route::get(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="variable">$ID</span> = <span class="keyword">new</span> Douyasi\IdentityCard\ID;</span><br><span class="line">	<span class="variable">$is_pass</span> = <span class="variable">$ID</span>-&gt;validateIDCard(<span class="string">'42032319930606629x'</span>);  <span class="comment">//校验身份证证号是否合法</span></span><br><span class="line">	<span class="variable">$area</span> = <span class="variable">$ID</span>-&gt;getArea(<span class="string">'42032319930606629x'</span>);  <span class="comment">//获取身份证所在地信息 遵循GB/T 2260-2007中华人民共和国行政区划代码 标准</span></span><br><span class="line">	<span class="variable">$gender</span> = <span class="variable">$ID</span>-&gt;getGender(<span class="string">'42032319930606629x'</span>);  <span class="comment">//获取性别 'f'表示女，'m'表示男，校验失败返回false</span></span><br><span class="line">	<span class="variable">$birthday</span> = <span class="variable">$ID</span>-&gt;getBirth(<span class="string">'42032319930606629x'</span>);  <span class="comment">//获取出生日期</span></span><br><span class="line">	<span class="keyword">return</span> compact(<span class="string">'is_pass'</span>, <span class="string">'area'</span>, <span class="string">'gender'</span>, <span class="string">'birthday'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>上面测试路由将返回下面 <code>json</code> 数据响应：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "<span class="attribute">is_pass</span>":<span class="value"><span class="literal">true</span></span>,</span><br><span class="line">    "<span class="attribute">area</span>":<span class="value">&#123;</span><br><span class="line">            "<span class="attribute">status</span>":<span class="value"><span class="literal">true</span></span>,</span><br><span class="line">            "<span class="attribute">result</span>":<span class="value"><span class="string">"湖北省 十堰市竹山县"</span></span>,</span><br><span class="line">            "<span class="attribute">provice</span>":<span class="value"><span class="string">"湖北省"</span></span>,</span><br><span class="line">            "<span class="attribute">city</span>":<span class="value"><span class="string">"十堰市"</span></span>,</span><br><span class="line">            "<span class="attribute">county</span>":<span class="value"><span class="string">"竹山县"</span></span><br><span class="line">        </span>&#125;</span>,</span><br><span class="line">    "<span class="attribute">gender</span>":<span class="value"><span class="string">"m"</span></span>,</span><br><span class="line">    "<span class="attribute">birthday</span>":<span class="value"><span class="string">"1993-06-06"</span></span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Identity_Card（中国大陆）公民身份证类">Identity Card（中国大陆）公民身份证类</h2><h3 id="安装说明">安装说明</h3><p>在 <code>composer</code> 中添加依赖：</p>
+<figure class=]]>
+    </summary>
+    
+      <category term="laravel,验证" scheme="http://blog.j955.net/tags/laravel-%E9%AA%8C%E8%AF%81/"/>
+    
+      <category term="php" scheme="http://blog.j955.net/categories/php/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[使用Alcatraz强化xcode]]></title>
