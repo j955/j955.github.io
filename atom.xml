@@ -5,7 +5,7 @@
   <subtitle><![CDATA[J955技术博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.j955.net//"/>
-  <updated>2015-08-04T07:35:19.000Z</updated>
+  <updated>2015-08-07T02:34:16.000Z</updated>
   <id>http://blog.j955.net//</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[composer添加国内镜像]]></title>
+    <link href="http://blog.j955.net/2015/08/07/composer%E6%B7%BB%E5%8A%A0%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/"/>
+    <id>http://blog.j955.net/2015/08/07/composer添加国内镜像/</id>
+    <published>2015-08-07T02:20:45.000Z</published>
+    <updated>2015-08-07T02:34:16.000Z</updated>
+    <content type="html"><![CDATA[<p>Composer是个好东西,但国外的地址太慢了影响效率而且不是经常能安装成功<br>在这里推荐Composer中国全量镜像的设置方法</p>
+<ol>
+<li>肯定要先安装Composer ^_^</li>
+<li><blockquote>
+<p>2.1：修改 composer 的全局配置文件<br> 打开命令行窗口（windows用户）或控制台（Linux、Mac 用户）并执行如下命令：</p>
+ <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer config -g repositories<span class="class">.packagist</span> composer http:<span class="comment">//packagist.phpcomposer.com</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<p> 就这么简单 ^_^ 之后就好好享受composer吧</p>
+<blockquote>
+<p>2.2 例2：以 laravel 项目的 composer.json 配置文件为例，添加本镜像服务配置信息到最后</p>
+ <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"repositories"</span>: [</span><br><span class="line">       &#123;<span class="string">"type"</span>: <span class="string">"composer"</span>, <span class="string">"url"</span>: <span class="string">"http://packagist.phpcomposer.com"</span>&#125;,</span><br><span class="line">       &#123;<span class="string">"packagist"</span>: <span class="literal">false</span>&#125;</span><br><span class="line">   ]</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Composer是个好东西,但国外的地址太慢了影响效率而且不是经常能安装成功<br>在这里推荐Composer中国全量镜像的设置方法</p>
+<ol>
+<li>肯定要先安装Composer ^_^</li>
+<li><blockquote>
+<p>2.1：修改 compos]]>
+    </summary>
+    
+      <category term="composer,备忘" scheme="http://blog.j955.net/tags/composer-%E5%A4%87%E5%BF%98/"/>
+    
+      <category term="备忘" scheme="http://blog.j955.net/categories/%E5%A4%87%E5%BF%98/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[验证中国大陆身份证]]></title>
