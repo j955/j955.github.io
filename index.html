@@ -162,6 +162,101 @@
           
           
             
+              <a class="post-title-link" href="/2015/08/14/使用GitHub来管理hexo的博客源文件/" itemprop="url">
+                使用GitHub来管理hexo的博客源文件
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          發表於
+          <time itemprop="dateCreated" datetime="2015-08-14T11:55:48+08:00" content="2015-08-14">
+            2015-08-14
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分類於
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>之前用MacBook air使用hexo写博客的一个问题就是源文件都是在本地的,公司配置了MacBook pro就出现公司一个hexo,家里的hexo不能同步的问题<br>觉得比较靠谱的办法还是用git来管理了。</p>
+<p>国内用习惯还是oschina的git.下面介绍下我的做法</p>
+<blockquote>
+<ol>
+<li><p>在oschina的git下建立一个新的repository ，名叫blog（与hexo文件夹名一样即可）。</p>
+</li>
+<li><p>在本地进入blog文件夹，用命令git init创建仓库。</p>
+</li>
+<li><p>设置远程仓库地址，并更新</p>
+<pre><code class="git">git remote add origin git@xxx //&#20320;&#30340;git&#36828;&#31243;&#22320;&#22336;&#10;git pull origin
+</code></pre>
+</li>
+<li><p>修改.gitignore文件（如果没有，请创建），在里面加入public/ .deploy/ themes/，这些是每次generate和deploy都会更新，对我们没用，因此忽略这两个文件的更新。</p>
+</li>
+<li><p>使用命令 git add .，将所有文件提交到缓存区。</p>
+</li>
+<li><p>使用命令 git commit -m “add all files” ，将这些文件提交到本地仓库。</p>
+</li>
+<li><p>使用命令git push origin master，将本地仓库的改动推送到远程git仓库。</p>
+</li>
+</ol>
+</blockquote>
+<p>现在在任何一台电脑，只需要git clone,就可以将hexo的源文件复制到本地了。<br>之后，当写博客后，只需要git add .再git commit -m再git push即可提交到远程仓库。<br>当远程仓库有更新时，使用git pull或者git fetch就可以同步代码到本地了。</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2015/08/07/composer添加国内镜像/" itemprop="url">
                 composer添加国内镜像
               </a>
@@ -723,7 +818,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
