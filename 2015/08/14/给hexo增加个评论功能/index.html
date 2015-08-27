@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="hexo,多说,评论功能," />
 
 
 
@@ -39,34 +39,19 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
 
 
-<meta name="description" content="之前用MacBook air使用hexo写博客的一个问题就是源文件都是在本地的,公司配置了MacBook pro就出现公司一个hexo,家里的hexo不能同步的问题觉得比较靠谱的办法还是用git来管理了。
-国内用习惯还是oschina的git.下面介绍下我的做法
-
-
-在oschina的git下建立一个新的repository ，名叫blog（与hexo文件夹名一样即可）。
-
-在本地进入blog文件">
+<meta name="description" content="参考链接:http://www.arao.me/2015/hexo-next-theme-optimize-base/http://wayneshawn.github.io/2015/04/06/hexo-duoshuo-comments-tutorial/
+这里补充些细节, 首先_config.yml 应该是themes-&amp;gt;next下的_config.yml文件然后需要调用命令 hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用GitHub来管理hexo的博客源文件">
-<meta property="og:url" content="http://blog.j955.net/2015/08/14/使用GitHub来管理hexo的博客源文件/index.html">
+<meta property="og:title" content="给hexo增加个评论功能">
+<meta property="og:url" content="http://blog.j955.net/2015/08/14/给hexo增加个评论功能/index.html">
 <meta property="og:site_name" content="J955技术博客">
-<meta property="og:description" content="之前用MacBook air使用hexo写博客的一个问题就是源文件都是在本地的,公司配置了MacBook pro就出现公司一个hexo,家里的hexo不能同步的问题觉得比较靠谱的办法还是用git来管理了。
-国内用习惯还是oschina的git.下面介绍下我的做法
-
-
-在oschina的git下建立一个新的repository ，名叫blog（与hexo文件夹名一样即可）。
-
-在本地进入blog文件">
-<meta property="og:updated_time" content="2015-08-14T04:05:18.000Z">
+<meta property="og:description" content="参考链接:http://www.arao.me/2015/hexo-next-theme-optimize-base/http://wayneshawn.github.io/2015/04/06/hexo-duoshuo-comments-tutorial/
+这里补充些细节, 首先_config.yml 应该是themes-&amp;gt;next下的_config.yml文件然后需要调用命令 hexo">
+<meta property="og:updated_time" content="2015-08-27T14:30:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用GitHub来管理hexo的博客源文件">
-<meta name="twitter:description" content="之前用MacBook air使用hexo写博客的一个问题就是源文件都是在本地的,公司配置了MacBook pro就出现公司一个hexo,家里的hexo不能同步的问题觉得比较靠谱的办法还是用git来管理了。
-国内用习惯还是oschina的git.下面介绍下我的做法
-
-
-在oschina的git下建立一个新的repository ，名叫blog（与hexo文件夹名一样即可）。
-
-在本地进入blog文件">
+<meta name="twitter:title" content="给hexo增加个评论功能">
+<meta name="twitter:description" content="参考链接:http://www.arao.me/2015/hexo-next-theme-optimize-base/http://wayneshawn.github.io/2015/04/06/hexo-duoshuo-comments-tutorial/
+这里补充些细节, 首先_config.yml 应该是themes-&amp;gt;next下的_config.yml文件然后需要调用命令 hexo">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -76,7 +61,7 @@
   };
 </script>
 
-    <title> 使用GitHub来管理hexo的博客源文件 // J955技术博客 </title>
+    <title> 给hexo增加个评论功能 // J955技术博客 </title>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 <!--[if lte IE 8]>
@@ -179,7 +164,7 @@
           
           
             
-              使用GitHub来管理hexo的博客源文件
+              给hexo增加个评论功能
             
           
         </h1>
@@ -188,7 +173,7 @@
       <div class="post-meta">
         <span class="post-time">
           發表於
-          <time itemprop="dateCreated" datetime="2015-08-14T11:55:48+08:00" content="2015-08-14">
+          <time itemprop="dateCreated" datetime="2015-08-14T12:46:07+08:00" content="2015-08-14">
             2015-08-14
           </time>
         </span>
@@ -208,6 +193,13 @@
 
         
           
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/08/14/给hexo增加个评论功能/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/14/给hexo增加个评论功能/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
         
       </div>
     </header>
@@ -218,29 +210,8 @@
       
 
       
-        <span itemprop="articleBody"><p>之前用MacBook air使用hexo写博客的一个问题就是源文件都是在本地的,公司配置了MacBook pro就出现公司一个hexo,家里的hexo不能同步的问题<br>觉得比较靠谱的办法还是用git来管理了。</p>
-<p>国内用习惯还是oschina的git.下面介绍下我的做法</p>
-<blockquote>
-<ol>
-<li><p>在oschina的git下建立一个新的repository ，名叫blog（与hexo文件夹名一样即可）。</p>
-</li>
-<li><p>在本地进入blog文件夹，用命令git init创建仓库。</p>
-</li>
-<li><p>设置远程仓库地址，并更新</p>
-<pre><code class="git">git remote add origin git@xxx //&#20320;&#30340;git&#36828;&#31243;&#22320;&#22336;&#10;git pull origin
-</code></pre>
-</li>
-<li><p>修改.gitignore文件（如果没有，请创建），在里面加入public/ .deploy/ themes/，这些是每次generate和deploy都会更新，对我们没用，因此忽略这两个文件的更新。</p>
-</li>
-<li><p>使用命令 git add .，将所有文件提交到缓存区。</p>
-</li>
-<li><p>使用命令 git commit -m “add all files” ，将这些文件提交到本地仓库。</p>
-</li>
-<li><p>使用命令git push origin master，将本地仓库的改动推送到远程git仓库。</p>
-</li>
-</ol>
-</blockquote>
-<p>现在在任何一台电脑，只需要git clone,就可以将hexo的源文件复制到本地了。<br>之后，当写博客后，只需要git add .再git commit -m再git push即可提交到远程仓库。<br>当远程仓库有更新时，使用git pull或者git fetch就可以同步代码到本地了。</p>
+        <span itemprop="articleBody"><p>参考链接:<br><a href="http://www.arao.me/2015/hexo-next-theme-optimize-base/" target="_blank" rel="external">http://www.arao.me/2015/hexo-next-theme-optimize-base/</a><br><a href="http://wayneshawn.github.io/2015/04/06/hexo-duoshuo-comments-tutorial/" target="_blank" rel="external">http://wayneshawn.github.io/2015/04/06/hexo-duoshuo-comments-tutorial/</a></p>
+<p>这里补充些细节, 首先_config.yml 应该是themes-&gt;next下的_config.yml文件<br>然后需要调用命令 hexo g 再启动本地预览环境 (hexo s)才能看到效果. enjoy it!</p>
 </span>
       
     </div>
@@ -251,6 +222,10 @@
           
             <a href="/tags/hexo/" rel="tag">#hexo</a>
           
+            <a href="/tags/多说/" rel="tag">#多说</a>
+          
+            <a href="/tags/评论功能/" rel="tag">#评论功能</a>
+          
         </div>
       
 
@@ -258,11 +233,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2015/08/25/jquery绑定后加载元素事件/" rel="prev">jquery绑定后加载元素事件</a>
+            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/08/07/composer添加国内镜像/" rel="next">composer添加国内镜像</a>
+              <a href="/2015/08/14/推荐的blog地址-持续更新/" rel="next">推荐的blog地址(持续更新..)</a>
             
           </div>
         </div>
@@ -287,6 +264,10 @@
 
             
               <div class="comments" id="comments">
+                
+                  <div class="ds-thread" data-thread-key="2015/08/14/给hexo增加个评论功能/"
+                       data-title="给hexo增加个评论功能" data-url="http://blog.j955.net/2015/08/14/给hexo增加个评论功能/">
+                  </div>
                 
               </div>
             
@@ -325,21 +306,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">分類</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-count">17</span>
               <span class="site-state-item-name">標籤</span>
               </a>
           </div>
@@ -424,11 +405,33 @@
   
   
     
-    
 
   
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"j955blog"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+  	  <script type="text/javascript">
+  		var duoshuo_user_ID = 13065177
+  	  </script>
+     
+  	<script src="/js/ua-parser.min.js"></script>
+  	<script src="/js/hook-duoshuo.js"></script>
+  
 
+    
   
   
   <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>

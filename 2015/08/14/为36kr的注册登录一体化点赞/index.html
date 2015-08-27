@@ -1,0 +1,639 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+    
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.4"/>
+
+
+
+
+  <meta name="keywords" content="36氪,http,注册登录," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="J955技术博客" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
+
+
+<meta name="description" content="最近公司要做一套用户注册登录系统找了很多用户系统参考后来发现了36氪的注册登录页面流程简单易用也很合乎我的想法.
+基于手机号码注册登录一体化现在的移动互联网时代手机号码注册早已经是用户习惯又愿意做的事情,而以前基于邮箱注册手段已经慢慢被淡化.
+
+首先,注册邮箱的成本几乎为0导致邮箱账号过于泛滥,因此系统充斥着很多垃圾用户,这是投资者和管理者都不愿意看到的事情.相对手机号注册用户的价格大得多了,一般">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为36kr的注册登录一体化点赞">
+<meta property="og:url" content="http://blog.j955.net/2015/08/14/为36kr的注册登录一体化点赞/index.html">
+<meta property="og:site_name" content="J955技术博客">
+<meta property="og:description" content="最近公司要做一套用户注册登录系统找了很多用户系统参考后来发现了36氪的注册登录页面流程简单易用也很合乎我的想法.
+基于手机号码注册登录一体化现在的移动互联网时代手机号码注册早已经是用户习惯又愿意做的事情,而以前基于邮箱注册手段已经慢慢被淡化.
+
+首先,注册邮箱的成本几乎为0导致邮箱账号过于泛滥,因此系统充斥着很多垃圾用户,这是投资者和管理者都不愿意看到的事情.相对手机号注册用户的价格大得多了,一般">
+<meta property="og:updated_time" content="2015-08-25T01:20:10.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="为36kr的注册登录一体化点赞">
+<meta name="twitter:description" content="最近公司要做一套用户注册登录系统找了很多用户系统参考后来发现了36氪的注册登录页面流程简单易用也很合乎我的想法.
+基于手机号码注册登录一体化现在的移动互联网时代手机号码注册早已经是用户习惯又愿意做的事情,而以前基于邮箱注册手段已经慢慢被淡化.
+
+首先,注册邮箱的成本几乎为0导致邮箱账号过于泛滥,因此系统充斥着很多垃圾用户,这是投资者和管理者都不愿意看到的事情.相对手机号注册用户的价格大得多了,一般">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    sidebar: 'post'
+  };
+</script>
+
+    <title> 为36kr的注册登录一体化点赞 // J955技术博客 </title>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+
+
+
+<div class="container one-column page-post-detail">
+    <div class="headband"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">J955技术博客</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首頁
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            <i class="menu-item-icon icon-categories"></i> <br />
+            分類
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            歸檔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-tags"></i> <br />
+            標籤
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <div class="main-inner">
+            <div id="content" class="content">
+                
+
+  <div id="posts" class="posts-expand">
+    
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              为36kr的注册登录一体化点赞
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          發表於
+          <time itemprop="dateCreated" datetime="2015-08-14T12:09:08+08:00" content="2015-08-14">
+            2015-08-14
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分類於
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/http/" itemprop="url" rel="index"><span itemprop="name">http</span></a></span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/08/14/为36kr的注册登录一体化点赞/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/14/为36kr的注册登录一体化点赞/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>最近公司要做一套用户注册登录系统找了很多用户系统参考后来发现了36氪的注册登录页面流程简单易用也很合乎我的想法.</p>
+<h3 id="基于手机号码注册登录一体化">基于手机号码注册登录一体化</h3><p>现在的移动互联网时代手机号码注册早已经是用户习惯又愿意做的事情,而以前基于邮箱注册手段已经慢慢被淡化.</p>
+<blockquote>
+<p>首先,注册邮箱的成本几乎为0导致邮箱账号过于泛滥,因此系统充斥着很多垃圾用户,这是投资者和管理者都不愿意看到的事情.相对手机号注册用户的价格大得多了,一般用户个人持有的手机号码最多也就3个,而不停换手机注册的成本比较高.</p>
+<p>其次,邮件的发送成本并不低.众所周知邮箱的入口早给163 sina qq等大牌占领并牢牢控制着,邮件稍微多发邮件很容易被邮件服务器误以为是垃圾邮件,而用户收到邮件愿意看邮件的转化率相低况且现在都流行微信push的方式.手机的发送虽然需要每条5-8分钱的成本,但如果您的项目不是自己一个人小打小闹的话这个成本其实也不是很高.</p>
+<p>所以公司的注册流程决定废除邮箱注册采用手机外加第三方登录.</p>
+</blockquote>
+<h3 id="流程上的减法">流程上的减法</h3><p>观看很多网站注册登录一般都需要两个按钮分别连接登录注册两个页面,而参考36氪的做法则是是统一在一起并且废除注册密码时候的密码二次输入.这样令到注册登录融为一体更加自然,因为注册和登录差距多输入一个动态验证码的过程.</p>
+<blockquote>
+<ol>
+<li>如果是手机用户,输入完手机之后系统会ajax查询下改手机号码是否为已经注册的用户,如果是已注册的用户提交按钮马上变为’登录’字眼.</li>
+<li>如果手机号码未被注册,页面会多显示一个短信动态验证码的输入框,同时提交按钮马上变成’注册’字眼.其实注册比登录就多了一个获取动态验证码的流程.</li>
+<li>减掉密码二次确认的输入框,想必大家都习惯注册账号的时候为什么需要输入2次密码.我自己感觉这个操作流程是有点low的做法了.<br>3.1 第三方登录的快捷便利减弱了传统网站的注册模式,微信,微博,qq第三账号进行直接登录不单用户操作极为简单.基本上连密码都不用输入就成为某个网站的注册用户了.那在那么便捷且更安全的情况下就可以登录了用户不乐意呢. ps:提到安全这里要多插一句,如果用户还是走原来填写自己的账号名密码方式注册其实会多增加一次账号被盗用的风险这就不展开说明了.<br>3.2 基于手机注册找回密码极为方便且相对安全,密码就算忘记找回也极为方便的事. 相对于邮箱找回密码而言手机找回密码要安全性更高,因为邮箱也是有需要密码登录的也存在邮箱密码忘记和被盗的可能,而手机它就在你身边(这不讨论手机丢了的情况)<br>一般用户输入密码的时候都会用自己常用的账号和密码,输入错误的情况极少.还有一种是随机生成密码这部分用户大部分都是程序员^_^二次输入只是copy2次而已其实没什么卵用.那用户二次输入密码的必要性已经不重要了.<br>经过减掉注册流程密码需要二次输入流程后,其实注册流程就比登录流程多了个获取并输入动态验证码的流程.这种设计下才让注册登录融合变得那么的自然及简单其实某种程度上其实也是方便了用户.</li>
+</ol>
+</blockquote>
+<h3 id="提高网络通信的安全性">提高网络通信的安全性</h3><p>这里不详细叙述网络安全性的重要性及必要性也不详细叙述怎样实现安全性.不同的项目不同侧重点,或者很多项目只是做功能体验为主安全性对于他们来说就是个用户看不见的东西.<br>但公司的业务范围老板考虑的是用户资料的安全性.所以注册登录流程上我们都要考虑.<br>这里简单描述下某些别有用心的人怎样获取到你的账号密码,这里只举例一个例子(说的不好不要喷我也是听说的或者提出您更牛x的方法).<br>首先,某些人需要知道您的账号密码他们必须有个拦截点,例如:wifi.那他们怎样做到的呢?假设你的wifi 信号是ABCDE, 某些人就会用一个信号更强大的路由器信号源也是命名为ABCDE而且不需要密码<br>相同情况下信号强的wifi信息就会逼退信号弱的.所以你可能会突然掉下线重连.其实这时你已经连接某些人为你准备的wifi了.之后某些人就可以通过路由器抓包截获你的访问的所有通信.目前来说大部分都是走http的(明文)<br>你输入什么接受什么都某些人都看得一清二楚. ^-^<br>这种情况解决办法:<br>你访问的网站是走https,https是双向通讯都进行加解密,这样计算某些人截获到也没什么卵用.但走https网站服务商每年都需要给几千的费用已经忘记了是人民币还是刀了,但由于双向都要加解密访问过程就会变慢.<br>还有一种就是网站为用户进行加密通讯.例如: RSA. 这里就不展开了. 我们的注册登录提交都是经过RSA的.这样对重要的信息进行RSA加密,这样某种程度是速度和安全性的解决方案.</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/36氪/" rel="tag">#36氪</a>
+          
+            <a href="/tags/http/" rel="tag">#http</a>
+          
+            <a href="/tags/注册登录/" rel="tag">#注册登录</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/08/14/推荐的blog地址-持续更新/" rel="prev">推荐的blog地址(持续更新..)</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/08/14/使用Git来管理hexo的博客源文件/" rel="next">使用Git来管理hexo的博客源文件</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+            </div>
+
+            
+
+            
+              <div class="comments" id="comments">
+                
+                  <div class="ds-thread" data-thread-key="2015/08/14/为36kr的注册登录一体化点赞/"
+                       data-title="为36kr的注册登录一体化点赞" data-url="http://blog.j955.net/2015/08/14/为36kr的注册登录一体化点赞/">
+                  </div>
+                
+              </div>
+            
+        </div>
+
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/default_avatar.jpg" alt="J955" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">J955</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description"></p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">文章</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-name">分類</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-name">標籤</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基于手机号码注册登录一体化"><span class="nav-number">1.</span> <span class="nav-text">基于手机号码注册登录一体化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流程上的减法"><span class="nav-number">2.</span> <span class="nav-text">流程上的减法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提高网络通信的安全性"><span class="nav-number">3.</span> <span class="nav-text">提高网络通信的安全性</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="copyright" >
+  
+  &copy; &nbsp; 
+  <span itemprop="copyrightYear">2015</span>
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">J955</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+</div>
+
+<div class="theme-info">
+  主題 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+        </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+</div>
+
+<script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"j955blog"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+  	  <script type="text/javascript">
+  		var duoshuo_user_ID = 13065177
+  	  </script>
+     
+  	<script src="/js/ua-parser.min.js"></script>
+  	<script src="/js/hook-duoshuo.js"></script>
+  
+
+    
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.4"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.4"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.4" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.4" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (CONFIG.sidebar === 'always') {
+            displaySidebar();
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+<!-- lazyload -->
+<script type="text/javascript" src="/js/lazyload.js"></script>
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery("#posts img").lazyload({
+            placeholder: "/images/loading.gif",
+            effect: "fadeIn"
+        });
+    });
+</script>
+</body>
+</html>
