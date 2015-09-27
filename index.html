@@ -162,6 +162,86 @@
           
           
             
+              <a class="post-title-link" href="/2015/08/27/跨域情况下iframe子页面调用父页面/" itemprop="url">
+                跨域情况下iframe子页面调用父页面
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          發表於
+          <time itemprop="dateCreated" datetime="2015-08-27T22:35:39+08:00" content="2015-08-27">
+            2015-08-27
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分類於
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/08/27/跨域情况下iframe子页面调用父页面/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/27/跨域情况下iframe子页面调用父页面/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>继上次公司规划一个用户中心系统需要我完成后,今天出现一个另外一个需求.一般情况下不同的系统需要注册登录的话都需要链接跳转到ucenter(用户中心)的注册登陆页面地址, 然后进行完注册登录流程再重定向回到注册登录前的页面,页面读取session获取其他方式显示用户信息.<br>这样的情况虽然简单但体验并不好,公司希望点击登录就弹出一个层然后就像用户中心那样完成所有的用户注册登录操作,并在登录完成后显示用户的登录信息.并且周一需要上线 (我的妈呀!!)在时间那么紧逼的情况下要使用什么方案呢?</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2015/08/25/jquery绑定后加载元素事件/" itemprop="url">
                 jquery绑定后加载元素事件
               </a>
@@ -212,7 +292,7 @@
       
         
           <span itemprop="articleBody"><p>用于备忘^_^. 直接上代码: 有基础的应该明白了,没基础的先去打下基础.</p>
-<p>$(document).on(‘click’,’.class’,function(){<br>    xxxxx<br>});</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).on(<span class="string">'click'</span>,<span class="string">'.class'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    xxxxx</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 </span>
         
       
@@ -978,92 +1058,6 @@
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/07/27/css居中剪裁图片/" itemprop="url">
-                css居中剪裁图片
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          發表於
-          <time itemprop="dateCreated" datetime="2015-07-27T22:47:26+08:00" content="2015-07-27">
-            2015-07-27
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分類於
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a></span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/07/27/css居中剪裁图片/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/27/css居中剪裁图片/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><pre><code class="css"> <span class="tag">img</span><span class="rules">{
-    <span class="rule"><span class="attribute">object-fit</span>:<span class="value">cover
-     width: <span class="number">50px</span></span></span>;
-     <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">50px</span></span></span>;
-}</span>
-</code></pre>
-<p>据说连ie8也支持,这里的width 跟height 必须小于图片原来大小效果才能看出</p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1103,21 +1097,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">分類</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">20</span>
               <span class="site-state-item-name">標籤</span>
               </a>
           </div>

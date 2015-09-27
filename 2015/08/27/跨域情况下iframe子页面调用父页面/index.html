@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="jquery," />
+  <meta name="keywords" content="iframe,js,跨域问题," />
 
 
 
@@ -39,19 +39,16 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
 
 
-<meta name="description" content="用于备忘^_^. 直接上代码: 有基础的应该明白了,没基础的先去打下基础.
-123$(document).on(&apos;click&apos;,&apos;.class&apos;,function()&amp;#123;    xxxxx&amp;#125;);">
+<meta name="description" content="继上次公司规划一个用户中心系统需要我完成后,今天出现一个另外一个需求.一般情况下不同的系统需要注册登录的话都需要链接跳转到ucenter(用户中心)的注册登陆页面地址, 然后进行完注册登录流程再重定向回到注册登录前的页面,页面读取session获取其他方式显示用户信息.这样的情况虽然简单但体验并不好,公司希望点击登录就弹出一个层然后就像用户中心那样完成所有的用户注册登录操作,并在登录完成后显示用户">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jquery绑定后加载元素事件">
-<meta property="og:url" content="http://blog.j955.net/2015/08/25/jquery绑定后加载元素事件/index.html">
+<meta property="og:title" content="跨域情况下iframe子页面调用父页面">
+<meta property="og:url" content="http://blog.j955.net/2015/08/27/跨域情况下iframe子页面调用父页面/index.html">
 <meta property="og:site_name" content="J955技术博客">
-<meta property="og:description" content="用于备忘^_^. 直接上代码: 有基础的应该明白了,没基础的先去打下基础.
-123$(document).on(&apos;click&apos;,&apos;.class&apos;,function()&amp;#123;    xxxxx&amp;#125;);">
-<meta property="og:updated_time" content="2015-09-27T12:58:39.000Z">
+<meta property="og:description" content="继上次公司规划一个用户中心系统需要我完成后,今天出现一个另外一个需求.一般情况下不同的系统需要注册登录的话都需要链接跳转到ucenter(用户中心)的注册登陆页面地址, 然后进行完注册登录流程再重定向回到注册登录前的页面,页面读取session获取其他方式显示用户信息.这样的情况虽然简单但体验并不好,公司希望点击登录就弹出一个层然后就像用户中心那样完成所有的用户注册登录操作,并在登录完成后显示用户">
+<meta property="og:updated_time" content="2015-08-27T14:44:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jquery绑定后加载元素事件">
-<meta name="twitter:description" content="用于备忘^_^. 直接上代码: 有基础的应该明白了,没基础的先去打下基础.
-123$(document).on(&apos;click&apos;,&apos;.class&apos;,function()&amp;#123;    xxxxx&amp;#125;);">
+<meta name="twitter:title" content="跨域情况下iframe子页面调用父页面">
+<meta name="twitter:description" content="继上次公司规划一个用户中心系统需要我完成后,今天出现一个另外一个需求.一般情况下不同的系统需要注册登录的话都需要链接跳转到ucenter(用户中心)的注册登陆页面地址, 然后进行完注册登录流程再重定向回到注册登录前的页面,页面读取session获取其他方式显示用户信息.这样的情况虽然简单但体验并不好,公司希望点击登录就弹出一个层然后就像用户中心那样完成所有的用户注册登录操作,并在登录完成后显示用户">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -61,7 +58,7 @@
   };
 </script>
 
-    <title> jquery绑定后加载元素事件 // J955技术博客 </title>
+    <title> 跨域情况下iframe子页面调用父页面 // J955技术博客 </title>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 <!--[if lte IE 8]>
@@ -164,7 +161,7 @@
           
           
             
-              jquery绑定后加载元素事件
+              跨域情况下iframe子页面调用父页面
             
           
         </h1>
@@ -173,8 +170,8 @@
       <div class="post-meta">
         <span class="post-time">
           發表於
-          <time itemprop="dateCreated" datetime="2015-08-25T07:40:29+08:00" content="2015-08-25">
-            2015-08-25
+          <time itemprop="dateCreated" datetime="2015-08-27T22:35:39+08:00" content="2015-08-27">
+            2015-08-27
           </time>
         </span>
 
@@ -182,7 +179,7 @@
           <span class="post-category" >
             &nbsp; | &nbsp; 分類於
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/jquery/" itemprop="url" rel="index"><span itemprop="name">jquery</span></a></span>
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
 
               
               
@@ -195,8 +192,8 @@
           
             <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2015/08/25/jquery绑定后加载元素事件/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/25/jquery绑定后加载元素事件/" itemprop="commentsCount"></span>
+              <a href="/2015/08/27/跨域情况下iframe子页面调用父页面/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/27/跨域情况下iframe子页面调用父页面/" itemprop="commentsCount"></span>
               </a>
             </span>
           
@@ -210,8 +207,7 @@
       
 
       
-        <span itemprop="articleBody"><p>用于备忘^_^. 直接上代码: 有基础的应该明白了,没基础的先去打下基础.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).on(<span class="string">'click'</span>,<span class="string">'.class'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    xxxxx</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+        <span itemprop="articleBody"><p>继上次公司规划一个用户中心系统需要我完成后,今天出现一个另外一个需求.一般情况下不同的系统需要注册登录的话都需要链接跳转到ucenter(用户中心)的注册登陆页面地址, 然后进行完注册登录流程再重定向回到注册登录前的页面,页面读取session获取其他方式显示用户信息.<br>这样的情况虽然简单但体验并不好,公司希望点击登录就弹出一个层然后就像用户中心那样完成所有的用户注册登录操作,并在登录完成后显示用户的登录信息.并且周一需要上线 (我的妈呀!!)在时间那么紧逼的情况下要使用什么方案呢?</p>
 </span>
       
     </div>
@@ -220,7 +216,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/jquery/" rel="tag">#jquery</a>
+            <a href="/tags/iframe/" rel="tag">#iframe</a>
+          
+            <a href="/tags/js/" rel="tag">#js</a>
+          
+            <a href="/tags/跨域问题/" rel="tag">#跨域问题</a>
           
         </div>
       
@@ -229,13 +229,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/08/27/跨域情况下iframe子页面调用父页面/" rel="prev">跨域情况下iframe子页面调用父页面</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/08/14/给hexo增加个评论功能/" rel="next">给hexo增加个评论功能</a>
+              <a href="/2015/08/25/jquery绑定后加载元素事件/" rel="next">jquery绑定后加载元素事件</a>
             
           </div>
         </div>
@@ -261,8 +259,8 @@
             
               <div class="comments" id="comments">
                 
-                  <div class="ds-thread" data-thread-key="2015/08/25/jquery绑定后加载元素事件/"
-                       data-title="jquery绑定后加载元素事件" data-url="http://blog.j955.net/2015/08/25/jquery绑定后加载元素事件/">
+                  <div class="ds-thread" data-thread-key="2015/08/27/跨域情况下iframe子页面调用父页面/"
+                       data-title="跨域情况下iframe子页面调用父页面" data-url="http://blog.j955.net/2015/08/27/跨域情况下iframe子页面调用父页面/">
                   </div>
                 
               </div>
